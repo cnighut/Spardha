@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://bdinfosys.com/demo/intima/header-menu/index.html#contact -->
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__bdinfosys_com" lang="en" style="overflow: hidden;"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+</style><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><link type="text/css" rel="stylesheet" href="data/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style>
+
+
+<style>
+
+
+#rectangle {
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+
+.custom-icon {
+  background: #666;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
+  border: 6px solid #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.46);
+  color: #fff;
+  display: table-cell;
+  font-size: 45px;
+  height: 120px;
+  padding: 30px;
+  text-align: center;
+  transition: .5s;
+  vertical-align: middle;
+  width: 120px;
+}
+.custom-icon:hover {
+  background: rgba(0, 154, 200, 0.6);
+}
+.fix-editor {
+  display: none;
+}
+.icon-wrapper {
+  display: inline-block;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+</style>
+   <!--- Basic Page Needs
+   ================================================== -->
+	<title>Spardha'18 | ALMA FIESTA </title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="./data/default.css">
+	 <link rel="stylesheet" href="./data/style.css">
+   <link rel="stylesheet" href="./data/responsive.css">
+   <link rel="stylesheet" href="./data/animate.css">
+   <link rel="stylesheet" href="./data/magnific-popup.css">
+   <link rel="stylesheet" href="./data/owl.carousel.css">
+   <link rel="stylesheet" href="./data/owl.theme.css">
+	
+   <!-- Script
+   ================================================== -->
+	<script src="./data/modernizr.js.download"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="icon" href="almalogo.png?" type="image/x-icon">
+
+<script type="text/javascript" charset="UTF-8" src="./data/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./data/map.js.download"></script><script type="text/javascript" charset="UTF-8" src="./data/util.js.download"></script><script type="text/javascript" charset="UTF-8" src="./data/marker.js.download"></script><script type="text/javascript" charset="UTF-8" src="./data/infowindow.js.download"></script><style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="./data/onion.js.download"></script><script type="text/javascript" charset="UTF-8" src="./data/controls.js.download"></script><script type="text/javascript" charset="UTF-8" src="./data/stats.js.download"></script></head>
+
+<body data-gr-c-s-loaded="true" style="width: 1366px;">
+
+  <!-- Preloader --> 
+    <div id="preloader" style="display: none;">
+      <div class="loader" style="display: none;"></div>    
+    </div><!--preloader end-->
+
+   <!-- Header
+   ================================================== -->
+   <header id="home" style="height: 613px;">
+
+      <nav id="m-nav" style="display: block;" class="">
+
+         <a class="mobile-btn" href="" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">HOME</a></li>
+            <li class=""><a class="smoothscroll" href="#about">ABOUT</a></li>
+            <li class=""><a class="smoothscroll" href="#eligibility">ELIGIBILITY</a></li>
+            <li class=""><a class="smoothscroll" href="#prize">PRIZES</a></li>
+		<!--	<li class=""><a class="smoothscroll" href="#pp">PREVIOUS PAPERS</a></li>-->
+            <li class=""><a class="smoothscroll" href="#cus">CONTACT US</a></li>
+            
+			<li class=""><a href="login.php">LOG IN/SIGN UP</a></li>
+
+            <li class=""><a href="result.php"><button style="width:auto;">Result</button></a></li>
+			
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner" style="margin-top: 0px;color: #ff6363">
+         <div class="banner-text" >
+			All India Aptitude-Cum-Talent Search Exam<br>
+            <h1 class="responsive-headline wow zoomIn animated" style="visibility: visible; animation-name: zoomIn; font-size: 72px;color: #ff6363"><span>SPARDHA'18</span></h1>
+            <h3 class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;color: #ff6363;">An excellent oportuinity to test your<span style="color: #ff6363"> KNOWLEDGE</span><br>An Initative of <a href="http://2017.almafiesta.com/" target="_blank"> <span style="color: #ff6363">ALMA FIESTA </span></a><br>In Association with <a href="http://www.iitbbs.ac.in/" target="_blank"><span style="color: #ff6363">IIT Bhubaneswar </span></a>.</h3>
+            <hr>
+
+            <a href="result.php"><button style="width:auto;">Result</button></a>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="fa fa-angle-double-down"></i></a>
+      </p>
+
+      <div class="header-overlay" style="opacity: 0;"></div>
+
+ 
+
+   </header> <!-- Header End -->
+
+  
+  
+	</br></br>
+	<div style="margin-top: 20px; text-align: center; background-color:rgba(128,128,128,0.3)" id="about">
+<h2 class="responsive-headline wow zoomIn animated " style="color: Black;visibility: visible; animation-name: zoomIn; font-size: 72px; font-family: 'Titillium Web', sans-serif;" ><br><br><br>ABOUT<br></h2>
+
+<div id="features-sec" class="container set-pad" >
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <!--<h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">ABOUT </h1>-->
+                     <p data-scroll-reveal="enter from the bottom after 0.3s" style="color:black;font-size:19x">
+                      <br>SPARDHA is an All India Aptitude-cum-Talent Search Examination conducted under <span style="font-weight:bold">'Prayatna'</span>,<br> the social drive of Alma Fiesta, the Annual Socio-Cultural fest of IIT Bhubaneswar.
+					  <br>
+					  It aims to inculcate among students, a sense of general awareness towards their social responsibility.
+                         </p>
+                 </div>
+
+             </div>
+            
+
+
+           <div class="row" >
+           
+               
+                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <div class="about-div">
+                     <i class="fa fa-users custom-icon fa-4x icon-round-border" ></i>
+                   
+                 <hr />
+				 <h3 style="color:black;font-weight:bold">NATIONAL PLATFORM</h3>
+                       <hr />
+                   <p style="color:black">
+                      SPARDHA provides a unique platform for students to compete against the brightest and innovative minds over the country and apply their knowledge and reasoning to shine among the crowd.
+                       
+                   </p>
+              
+                </div>
+				
+                   </div>
+                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+                     <div class="about-div">
+                     <i class="fa fa-paper-plane fa-4x icon-round-border custom-icon" ></i>
+                   
+                 <hr />
+				 <h3 style="color:black;font-weight:bold" >INNOVATIVE APPROACH</h3>
+                       <hr />
+                   <p style="color:black">
+                        SPARDHA aims to create an awareness about the importance of general awareness along with reviving the lost curiosity and interest among the students by providing them with a test that challenges their analytical thinking. 
+                       
+                   </p>
+               
+                </div>
+                   </div>
+                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
+                     <div class="about-div">
+                     <i class="fa  fa-tint fa-4x icon-round-border custom-icon" ></i>
+                   
+                 <hr />
+				 <h3 style="color:black;font-weight:bold" >PRAYATNA</h3>
+                       <hr />
+                   <p style="color:black" >
+                        This year “Prayatna" - the social campaign associated with ALMA FIESTA had taken up the issue of blood donation  with a theme of "Share Life: The blood donation drive."
+                       
+                   </p>
+                <a href="https://www.facebook.com/pg/s4s.iitbbs/photos/?tab=album&album_id=876578975810071" class="btn btn-info btn-set"  target="_blank">GALLERY</a>
+                </div>
+                   </div>
+                 
+                 
+               </div>
+             </div>
+
+</div>
+<!--ELIGIBILITY-->
+<br><br>
+<div style="margin-top: 20px; text-align: center; color: #ff6363" id="eligibility">
+<!--<h2 class="responsive-headline wow zoomIn animated" style="visibility: visible; animation-name: zoomIn; font-size: 72px;background-color:black;"><span>ELIGIBILITY<br><br></span></h2>-->
+
+<div id="faculty-sec" style="background-color:black">
+    <div class="container set-pad">
+             <div class="row text-center">
+			 <h2 class="responsive-headline wow zoomIn animated" style="visibility: visible; animation-name: zoomIn; font-size: 68px;background-color:black; font-family: "Times New Roman", Times, serif;"><span style="color: #ff6363"><br><br>ELIGIBILITY<br><br></span></h2>
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                    
+                     <p data-scroll-reveal="enter from the bottom after 0.3s" style="color:color: #ff6363">
+                     The examination will be conducted in three groups. <br>The question paper for each group would include problems that will span across their previous analytical, technical and social knowledge. 
+                         </p>
+                 </div>
+
+             </div>
+            
+
+           <div class="row" >
+           
+               
+                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <div class="faculty-div">
+					 
+                      <i class="fa  fa-leaf fa-4x icon-round-border1 custom-icon" ></i>
+					 
+                   <h3 style="color: #ff6363">GROUP A </h3>
+                 <hr />
+                         <h4 style="color: #ff6363">This group includes classes of <br> VI-VIII</h4>
+                  
+                </div>
+                   </div>
+                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+                     <div class="faculty-div">
+                       <i class="fa  fa-pagelines fa-4x icon-round-border1 custom-icon" ></i>
+                   <h3 style="color: #ff6363">GROUP B</h3>
+                 <hr />
+                         <h4 style="color: #ff6363">This group includes classes of <br>IX-X</h4>
+                   
+                </div>
+                   </div>
+               <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
+                     <div class="faculty-div">
+                       <i class="fa fa-tree fa-4x icon-round-border1 custom-icon" ></i>
+                   <h3 style="color: #ff6363">GROUP C</h3>
+                 <hr />
+                         <h4 style="color: #ff6363">This group includes classes of <br>XI-XII</h4>
+                 
+                </div>
+																
+                   </div>
+                 
+               </div>
+             </div>
+        </div>
+
+</div>
+<div style="background-color:rgba(125,125,125,0.3);">
+
+<div style="background-color:rgba(125,125,125,0.3);">
+<div style="margin-top: 20px; text-align: center; background-color:rgba(125,125,125,0.3);" id="prize">
+<h2 class="responsive-headline wow zoomIn animated" style="color: Black;visibility: visible; animation-name: zoomIn; font-size: 72px; font-family: 'Titillium Web', sans-serif;"><br><br>PRIZES<br><br>
+
+</div>
+               <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" style="background-color: rgba(125,125,125,0.3);"  >
+                   <div class="panel-group" style="style=background-color:rgba(125,125,125,0.3);" id="accordion">
+                        <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.5s">
+                            <div class="panel-heading" >
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
+                                  <strong> CERTIFICATION</strong> 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>Each participating student will recieve a certificate of participation from Alma-Fiesta, IIT Bhubaneswar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.7s">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                                      <strong> ANALYSIS REPORT</strong> 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse" style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                      Each participating student will recieve a detailed analysis report of their performance in SPARDHA and the report will be strictly confined to the student's personal performance. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.9s">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                                        <strong style="color:black">SCHOOL AND REGIONAL PERFORMANCE</strong> 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse"  style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                      A special certificate of recognition will be given to distinctive performers of each school and/or  respective city/region.
+										
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+						 <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.9s">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
+                                        <strong >INTERVIEW</strong>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse"  style="height: 0px;">
+                                <div class="panel-body">
+                                    <p>
+                                     The short-listed students will have an exclusive interview published on the
+										website by Alma Fiesta, IIT Bhubaneswar.
+										
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <div class="alert alert-info" data-scroll-reveal="enter from the bottom after 1.1s" >
+                       <span style="font-size:20px;">
+                           Prizes Worth 
+                           <hr />
+                           <strong style="font-size:45px;"> INR 1,00,000/- </strong>
+                       </span>
+                   </div>
+           </div>
+             
+                 
+                 
+               </div>
+			   
+			   <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1"><img src="Temp.jpeg" class="img-thumbnail" 
+                 height="auto" width="500px"/></div>
+			   
+             </div>
+     
+	 
+</br></br>
+</h2>
+</div>
+
+   <!-- Contact us Section
+   ================================================== -->
+   <
+   <div class="row" style="font-size:25px;color:black"></div>
+   <div class="row" style="font-size:25px;color:black"></div>
+   <div class="row" style="font-size:25px;color:black" style="background-color:rgba(125,125,125,0.3);"><br><br><span style="font-weight:bold; background-color:rgba(125,125,125,0.3); " >Worth a shot,don't you think?<span></div></span></div><br><br><br>
+<div style= "background-color: rgba(125,125,125, 0.3); margin-top: 20px; text-align: center; margin-bottom: 20px" id="pp">
+<br><h2 class="responsive-headline wow zoomIn animated " style="color: Black;visibility: visible; animation-name: zoomIn; font-size: 48px; font-family: 'Titillium Web', sans-serif; vertical-align: center;" ><br>PREVIOUS PAPERS<br><br></h2>
+<ul class="actions">
+										
+										<li><a href="papers/6-8" class="button special icon " download="SP17[6-8]">GROUP A</a>&nbsp;<a href="papers/9-10" class="button special icon " download="SP17[9-10]">GROUP B</a>&nbsp;<a href="papers/11-12" class="button special icon " download="SP17[11-12]">GROUP C</a></li>
+										
+									
+</ul>
+</div>
+   <div id="cus" style="background-color: black;">
+   <section id="portfolio">
+
+      <div class="row" >
+
+         <div class="twelve columns collapsed">
+
+            <h2 class="section-title wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;margin-bottom: 100px font-family: 'Titillium Web', sans-serif; color:#ff6363">CONTACT US</h2>
+				<br>
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-halves s-bgrid-thirds cf wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+
+          	   <div class="columns portfolio-item">
+			   
+               
+                      <a  href="https://www.facebook.com/mayank.kulshrestha.142" target="_blank"> 
+                        <img  src="7.JPG" alt="Mayank Kulshrestha" >
+                        <div class="overlay">
+                           <div class="portfolio-item-meta" style="align: center;">
+          					      <h5 style="color: #000;">Mayank Kulshrestha</h5>
+                              <p style="color: #000;"> +91-9078814443</p>
+          					   </div>
+                        </div>
+                       <div class="link-icon"><i class="fa fa-facebook fa-2x" style="color: #000;"></i></div>
+                    
+</a>
+                 
+          		</div> 
+				
+          	   <div class="columns portfolio-item">
+			   
+               
+                      <a  href="https://www.facebook.com/profile.php?id=100009780306399" target="_blank"> 
+                        <img  src="chico.jpg" alt="Shivam Shukla" >
+                        <div class="overlay">
+                           <div class="portfolio-item-meta" style="align: center;">
+          					      <h5 style="color: #000;">Shivam Shukla</h5>
+                              <p style="color: #000;"> +91-9479323093</p>
+          					   </div>
+                        </div>
+                       <div class="link-icon"><i class="fa fa-facebook fa-2x" style="color: #000;"></i></div>
+                    
+</a>
+                 
+          		</div> 
+</div>
+              
+
+          
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+        
+
+         
+
+         
+	      
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+
+
+</div>
+<!--
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <!--<label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>-->
+
+      <!--<label for="psw"><b>Roll number</b></label>
+      <input type="text" placeholder="Enter your Roll number" name="psw" required><span class="error">* <?php echo $nameErr;?></span>
+        <!--<input id="btn" type="button" value="click" onclick="pay(); cls();"/>-->
+      <!--<button onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='block';" >Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+
+      <div id ="id02" class = "resultpopup" style="display: block;">
+      <center>
+        <h1>Congratulations!</h1>
+        <div class="w3-container">
+  
+  <table class="w3-table-all">
+    <thead>
+      <tr class="w3-red">
+        <th>Roll Number</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Marks</th>
+        <th>Rank</th>
+      </tr>
+    </thead>
+    <tr>
+      <td><?php echo $psw ?></td>
+      <td><?php echo $name ?></td>
+      <td><?php echo $classq ?></td>
+      <td><?php echo $marks ?></td>
+      <td><?php echo $rank ?></td>
+    </tr>
+    
+  </table>
+</div>
+      </center>
+</div>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <!--<span class="psw">Forgot <a href="#">password?</a></span>-->
+    <!--</div>
+  </form>
+</div>-->
+
+  
+  
+
+
+   
+
+
+ 
+   
+
+
+   <!-- footer
+   ================================================== -->
+   <footer id="myfoot" style="background-color: rgba(125,125,125,0.3);">
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://www.facebook.com/almafiesta/?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://www.instagram.com/almafiesta.iitbbs/"><i class="fa fa-instagram"></i></a></li>
+			   <li><a href="https://www.youtube.com/channel/UCVAHFAfxXx0ZaOyS5VczKiA"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>Almafiesta © Copyright 2018, All Rights Reserved</li>
+               
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="http://bdinfosys.com/demo/intima/header-menu/index.html#home"><i class="fa fa-chevron-up"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+
+   <script src="./data/jquery-2.1.1.min.js.download"></script>
+   <script src="./data/js"></script>
+   <script src="./data/gmaps.js.download"></script>
+   <script src="./data/owl.carousel.min.js.download"></script>
+   <script src="./data/waypoints.js.download"></script>
+   <script src="./data/jquery.fittext.js.download"></script>
+   <script src="./data/magnific-popup.js.download"></script>
+   <script src="./data/wow.min.js.download"></script>
+   <script src="./data/jquery.nicescroll.min.js.download"></script>
+   <script src="./data/script.js.download"></script>
+   <script>
+// Get the modal
+var modal = document.getElementById('id01');
+var resultpopup = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        //alert("Reload of page!");
+        modal.style.display = "none";
+        //resultpopup.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+<div id="ascrail2000" class="nicescroll-rails" style="width: 8px; z-index: auto; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 0;"><div style="position: relative; top: 0px; float: right; width: 8px; height: 58px; background-color: rgb(17, 171, 176); background-clip: padding-box; border-radius: 5px;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails" style="height: 8px; z-index: auto; position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; display: none; opacity: 0;"><div style="position: relative; top: 0px; height: 8px; width: 1366px; background-color: rgb(17, 171, 176); background-clip: padding-box; border-radius: 5px;"></div></div></body></html>

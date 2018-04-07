@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="almalogo.png?" type="image/x-icon">
+<title> Sign Up | Spardha'18 | Alma Fiesta'18</title></head>
+<style>
+@import "compass/css3";
+
+$body-bg: #c1bdba;
+$form-bg: #13232f;
+$white: #ffffff;
+
+$main: #1ab188;
+$main-light: lighten($main,5%);
+$main-dark: darken($main,5%);
+
+$gray-light: #a0b3b0;
+$gray: #ddd;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll; 
+}
+
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.placeholder #tab-content label {
+  display: none;
+}
+ .no-placeholder #tab-content label{
+margin-left:5px;
+  position:relative;
+  display:block;
+  color:grey;
+  text-shadow:0 1px white;
+  font-weight:bold;
+}
+
+a {
+  text-decoration:none;
+  color: #1ab188;
+  transition:.5s ease;
+}
+.mystyle{font-size: 29px; background:rgba(19, 35, 47, 0.2) ; border-color: #a0b3b0; padding-right:110px; color:#ffffff;}
+a:hover {
+    color:#ffBA8F;
+  }
+
+.form {
+  background:rgba(19, 35, 47, 0.7);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:10px;
+  box-shadow:0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  
+  li a {
+    display: inline-block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba(160, 179, 176 , 0.25);
+    color:#a0b3b0;
+    font-size:20px;
+    float:center;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    a:hover {
+      background:#1BBA8F;
+      color:#ffffff;
+    }
+  }
+  a:active {
+    background:#1ab188;
+    color:#ffffff;
+  }
+}
+.tab-group li a {
+    display:inline-block;
+    text-decoration:none;
+    padding:15px;
+    background:#1ab188;
+    color:#ffBA8F;
+    font-size:20px;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease; 
+}
+
+.tab-group li a:hover{
+  background:#ffBA8F;
+  color:#ffffff;  
+}
+
+/*
+.tab-group li a:active{
+  background:#1ab188;
+    color:#ffffff;
+}
+
+.tab-group::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+*/
+.tab-content > div:last-child {
+  display:none;
+}
+
+h1 {
+  text-align:center;
+  color:#ffffff;
+  font-weight:300;
+  margin:0 0 40px;
+}
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:#ffffff;
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+  	margin:2px;
+  	color:#1ab188;
+  }
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+	color:#ffffff;
+}
+
+textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid #a0b3b0;
+  color:#ffffff;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &i:focus {
+		outline:0;
+		border-color:#1ab188;
+  }
+}
+
+.sstate{
+    position: relative;
+    display: inline-block;
+    width: 100%
+    height = 100%
+}
+
+input{
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid #a0b3b0;
+  color:#1ab188;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &i:focus {
+    outline:0;
+    border-color:#1ab188;
+  }
+}
+
+input:focus{
+  outline:0;
+  border-color:#1ab188;
+}
+
+textarea {
+  border:2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap{
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:10px;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing: 0.1em;
+  background:#1ab188;
+  color:#ffffff;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+}
+
+.button :hover, .button:focus {
+    background:#00BA8F;
+  }
+
+
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+
+.column: {
+  float: left;
+  width:33%;
+  padding: 15px;
+  height: 150px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear:both;
+}
+
+</style>
+<script>$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+  var $this = $(this),
+      label = $this.prev('label');
+
+	  if (e.type === 'keyup') {
+			if ($this.val() === '') {
+          label.removeClass('active highlight');
+        } else {
+          label.addClass('active highlight');
+        }
+    } else if (e.type === 'blur') {
+    	if( $this.val() === '' ) {
+    		label.removeClass('active highlight'); 
+			} else {
+		    label.removeClass('highlight');   
+			}   
+    } else if (e.type === 'focus') {
+      
+      if( $this.val() === '' ) {
+    		label.removeClass('highlight'); 
+			} 
+      else if( $this.val() !== '' ) {
+		    label.addClass('highlight');
+			}
+    }
+
+});
+
+$('.tab a').on('click', function (e) {
+  
+  e.preventDefault();
+  
+  $(this).parent().addClass('active');
+  $(this).parent().siblings().removeClass('active');
+  
+  target = $(this).attr('href');
+
+  $('.tab-content > div').not(target).hide();
+  
+  $(target).fadeIn(600);
+  
+});</script>
+<body>
+<div class="form">
+      
+    <!--<div class = "row">
+      <div class = "col-md-4 col-sm-4 col-lg-4">
+        <div class = "toplink">
+        <a href="#signup"> Sign Up</a>
+        </div>
+      </div>
+      <div class = "col-md-4 col-sm-4 col-lg-4">
+        <div class = "toplink">
+        <a href="login.html"> Log in</a>
+        </div>
+      </div>
+    </div>-->
+
+
+      <ul class="tab-group">
+        <li class="tab"><a href="login.php">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for <strong><a href="index.html" target="_blank">Spardha</a></strong>, the annual talent hunt competition of <strong><a href="http://2017.almafiesta.com/" target="_blank">Alma Fiesta </a></strong></h1>
+          
+          <form class = "signupform" action="signup.php" enctype="multipart/form-data" method="post">
+          
+          
+            <div class="field-wrap"><label>Complete Name*:</label><br><br>
+              <label><span class="req"></span>
+              </label>
+              <input type="text" required autocomplete="on" id="compname" name="name" placeholder="" />
+            </div>
+
+           <div class="field-wrap"><label>E-Mail Id*:</label><br><br>
+              <label><span class="req"></span>
+              </label>
+              <input type="email"required autocomplete="on" name="email"/>
+            </div>
+            
+            <div class="field-wrap"><label>Mobile Number (10 digits)*:</label><br><br>
+              <label><span class="req"></span>
+              </label>
+              <input type="text" required autocomplete="on" minlength="10" name="mobno"/>
+            </div>
+            
+            <div class="field-wrap"><label>Name of the School*:</label><br><br>
+              <label><span class="req"></span>
+              </label>
+              <input type="text"required autocomplete="off" name="ns"/>
+            </div>
+          
+            <div class="field-wrap"><label>School Address*:</label><br><br>
+              <label><span class="req"></span>
+              </label>
+              <input type="text"required autocomplete="off" name="sa"/>
+            </div>
+            
+            <div class="state "><select class = "sstate"required  name="state"  style="font-size: 26px; background:rgba(19, 35, 47, 0.1) ; border-color: #a0b3b0; padding-right:136px; padding-left:10px; color:#ffffff;">
+          <option value="" name=""  disabled="disabled" selected="selected" >State</option>
+           <option value="Andaman and Nicobar Islands" style="font-size: 29px; background:rgba(19, 35, 47, 0.2) ; border-color: #a0b3b0; padding-right:110px; color:#ffffff;" name="" >Andaman and Nicobar Islands</option>
+          <option value="Andhra Pradesh" name="" >Andhra Pradesh</option>
+          <option value="Arunachal Pradesh" name="">Arunachal Pradesh</option>
+          <option value="Assam" name="" >Assam</option>
+          <option value="Bihar" name="" >Bihar</option>
+          <option value="Chandigarh" name="" >Chandigarh</option>
+          <option value="Chhattisgarh" name="" >Chhattisgarh</option>
+          <option value="Dadra and Nagar Haveli " name=" " >Dadra and Nagar Haveli</option>
+          <option value="Daman and Diu" name="" >Daman and Diu</option>
+          <option value="New Delhi" name="" >New Delhi</option>
+          <option value="Goa" name="" >Goa</option>
+          <option value="Gujarat" name="" >Gujarat</option>
+          <option value="Haryana" name="" >Haryana</option>
+          <option value="Himachal Pradesh" name="" >Himachal Pradesh</option>
+          <option value="Jammu and Kashmir" name="" >Jammu and Kashmir</option>
+          <option value="Jharkhand" name="" >Jharkhand</option>
+          <option value="Karnataka" name="" >Karnataka</option>
+          <option value="Kerala " name="" >Kerala </option>
+          <option value="Lakshadweep" name="" >Lakshadweep</option>
+          <option value="Madhya Pradesh" name="" >Madhya Pradesh</option>
+          <option value="Maharashtra" name="" >Maharashtra</option>
+          <option value="Manipur" name="" >Manipur</option>
+          <option value="Meghalaya" name="" >Meghalaya</option>
+          <option value="Mizoram" name="" >Mizoram</option>
+          <option value="Nagaland" name="" >Nagaland</option>
+          <option value="Odisha" name="" >Odisha</option>
+          <option value="Puducherry" name="" >Puducherry</option>
+          <option value="Punjab" name="" >Punjab</option>
+          <option value="Rajasthan" name="" >Rajasthan</option>
+          <option value="Sikkim" name="" >Sikkim</option>
+          <option value="Tamil Nadu" name="" >Tamil Nadu</option>
+          <option value="Telangana" name="" >Telangana</option>
+          <option value="Tripura" name="" >Tripura</option>
+          <option value="Uttar Pradesh" name="" >Uttar Pradesh</option>
+          <option value="Uttarakhand" name="" >Uttarakhand</option>
+          <option value="West Bengal" name="" >West Bengal</option>
+          
+          
+        </select>
+        <span class="error">  </span>
+        <br><br>
+        </div>
+
+            <div class="field-wrap"><label>Enter Password*:</label><br><br>
+              <label><span class="req"></span>
+              </label>
+              <input type="password"required autocomplete="off" minlength = "6" name="pword"/>
+            </div>
+            
+            <div class="field-wrap"><label>Re-enter Password*:</label><br><br>
+              <label><span class="req"></span>
+              </label>
+              <input type="password"required autocomplete="off" minlength = "6" name="pword2"/>
+            </div>
+          
+            <button type="submit" class="button button-block" style="padding-left:5px;padding-right:5px;"/>Submit</button>
+              <br><br><br>
+          </form>
+
+        </div><!--signup-->
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form class = "loginform" action="/" method="post">
+          
+            <div class="field-wrap"><label>Email-Id*:</label><br><br>
+            <label><span class="req"></span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+           </div>
+          
+            <div class="field-wrap"><label>Password*:</label><br><br>
+            <label><span class="req"></span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+            </div>
+          
+          
+            <button class="button button-block"/>View Profile!</button>
+          
+          </form>
+
+        </div><!--login-->
+        
+      </div><!-- tab-content -->
+  
+<!-- /form -->
+
+ <div class="row">
+   <!--<div class="col- md-2 col-sm-4 col-lg-4"><a href="https://www.facebook.com/almafiesta/?ref=br_rs">
+     <i class="fa fa-facebook fa-4x col-lg-offset-12 col-sm-offset-7 col-md-offset-12 "></i></a></div>
+   <div class="col-md-4 col-sm-4 col-lg-4"><div class= "column">
+      <a href="https://www.instagram.com/almafiesta.iitbbs/"><i class="fa fa-instagram fa-4x col-lg-offset-11 col-sm-offset-12 col-md-offset-5"></i></a></div>
+   <div class="col-md-4 col-sm-6 col-lg-4 col-lg-offset-4 col-sm-offset-0 col-md-offset-8">
+     <div class= "column"><strong>
+     <a href="almafiesta.com">Almafiesta </a>© Copyright 2018, All Rights Reserved |Web Development Team|</strong>
+    </div>
+   </div>-->
+   <div class="col-md-4 col-sm-4 col-lg-4" style="padding-left:60px;"><a href="https://www.facebook.com/almafiesta/?ref=br_rs">
+     <i class="fa fa-facebook fa-4x "></i></a></div>
+   <div class="col-md-4 col-sm-4 col-lg-4">
+      <a href="https://www.instagram.com/almafiesta.iitbbs/"><i class="fa fa-instagram fa-4x" style="padding-left:50px;"></i></a></div>
+   <div class="col-md-4 col-sm-4 col-lg-4">
+      <a href="https://www.youtube.com/channel/UCVAHFAfxXx0ZaOyS5VczKiA"><i class="fa fa-youtube fa-4x"style="padding-left:50px; "></i></a></div></div>
+   <div class= "row"><strong></br>
+     <a href="http://2017.almafiesta.com/">Almafiesta </a> © Copyright 2018, All Rights Reserved |Web Development Team|</strong></div>
+ </div>
+
+</div>
+</body>
+</html>
